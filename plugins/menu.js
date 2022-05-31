@@ -10,38 +10,92 @@ const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
 ╭══════════════════
-║╭──❉[ *Hai, %name!* ]❉──
-║│➸ Tersisa *%limit Limit*
-║│➸ Role *%role*
-║│➸ Level 
-║│➸ *%level (%exp / %maxexp)* [%xp4levelup]
-║│➸ %totalexp XP secara Total
+║╭──✧「 *FachriBotz* 」✧──
+║│*${ucapan()} %name!*
+║│✾ Tersisa *%limit Limit*
+║│✾ Role *%role*
+║│✾ Level 
+║│✾ *%level (%exp / %maxexp)* [%xp4levelup]
+║│✾ %totalexp XP secara Total
 ║╰────────────────
 ╰══════════════════
 ╭══════════════════
-║╭──❉[ 𝙒𝙖𝙠𝙩𝙪 ]❉───
-║│➸ Tanggal: 
-║│➸ *%week %weton, %date*
-║│➸ Tanggal Islam:
-║│➸ *%dateIslamic*
-║│➸ Waktu: *%time*
-║│➸ Uptime: *%uptime (%muptime)*
-║│➸ Database: %rtotalreg dari %totalreg
-║╰──────────────────
+║╭──✧「 Today 」✧───
+║│✾ Tanggal: 
+║│✾ *%week %weton, %date*
+║│✾ Tanggal Islam:
+║│✾ *%dateIslamic*
+║│✾ Waktu: *%time*
+║│✾ Uptime: *%uptime (%muptime)*
+║│✾ Database: %rtotalreg dari %totalreg║╰──────────────────
 ╰════════════════════
-%readmore`.trimStart(),
-  header: '┏━━ꕥ 𓊈 *%category* 𓊉 ꕥ━⬣',
-  body: '┃ ☂︎ ⎙ %cmd %islimit %isPremium',
-  footer: '┗━ꕥ',
-  after: `
-*One Bot V. 4.15 Alpha*
-*Colour Your Life*
+ %readmore`.trimStart(),
+  header: '┏━━✧「 *%category* 」 ✧━━',
+  body: '┃ 〲⎙ %cmd %islimit %isPremium',
+  footer: '┗━···✧',
+  after: `⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕
+     々› %me
+  Powered By %waofc
 `,
 }
 let bzz = './src/Ara.mp3'
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 	let { anon, anticall, antispam, antitroli, backup, jadibot, groupOnly, nsfw } = global.db.data.settings[conn.user.jid]
     let totaljadibot = [...new Set([...global.conns.filter(conn => conn.user && conn.state !== 'close').map(conn => conn.user)])]
+
+//TAGS
+
+	let tag = `@${m.sender.split('@')[0]}`
+
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+
+    let waofc = `@${'0'.split('@')[0]}`
+
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+
+ let ow = `@${'6285713041886'.split('@')[0]}`
+
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+
+ let nurt = `@${'6281334177340'.split('@')[0]}`
+
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+
+ let mds = `@${'62895336282144'.split('@')[0]}`
+
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+
+ let mds2 = `@${'62887435047326'.split('@')[0]}`
+
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+
+ let admn = `@${'6285713041886'.split('@')[0]}`
+
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+
+  let par = `@${'6289669249850'.split('@')[0]}`
+
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+
+ let par2 = `@${'6287884680589'.split('@')[0]}`
+
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+
+ let par3 = `@${'62895330009821'.split('@')[0]}`
+
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+
+ let par4 = `@${'6289638074455'.split('@')[0]}`
+
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+
+ let tq = `@${'62831433937633'.split('@')[0]}`
+
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+
+ let par6 = `@${'6281326412754'.split('@')[0]}`
+
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
 
     let _uptime = process.uptime() * 1000
     let uptime = clockString(_uptime)
@@ -233,8 +287,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ┃✾ _*${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}*_ 𝖢𝗁𝖺𝗍 𝖳𝖾𝗋𝖻𝖺𝗇𝗇𝖾𝖽
 ┃✾ _*${Object.entries(global.db.data.users).filter(user => user[1].banned).length}*_  𝖯𝖾𝗇𝗀𝗀𝗎𝗇𝖺 𝖳𝖾𝗋𝖻𝖺𝗇𝗇𝖾𝖽
 ┗━━━━━━━━ꕥ`.trim(),
-                        "footerText": "Hi kk >‿‿<",
-                        "buttonText": "𝘓𝘪𝘴𝘵 𝘔𝘦𝘯𝘶",
+                        "footerText": "FachriBotz By Fachri",
+                        "buttonText": "Silahkan Di Pilih Kak",
                         "listType": "SINGLE_SELECT",
                         "sections": [
                             {
@@ -280,7 +334,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                     "rowId": ".menu News"
                                 }, { 
                                     "title": "☰ Game",
-                                    "description": "Game Di One Botz",
+                                    "description": "Game Di bot",
                                     "rowId": ".menu game"
                                 }, { 
                                     "title": "️☰ Epic Rpg",
@@ -400,15 +454,63 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                 }],
                                 "title": "⟣──────────────❲ Penutup ❳───────────────⟢"
                             }
+                        
                         ], "contextInfo": 
-						{ "stanzaId": m.key.id,
-                        "participant": "0@s.whatsapp.net",
-                        "remoteJid": "60149431385-1618206438@g.us",
+
+                         { "stanzaId": m.key.id,
+
+                        "participant": m.sender,
+
                         "quotedMessage": m.message
-						}
+
+                        }
+
                     }
-                 }, {}), {waitForAck: true})
+
+                 }, {quoted: ftrol, contextInfo: { mentionedJid: conn.parseMention(txtmenu) }}), { waitForAck: true })
+
+  
+
     }
+
+        
+
+    const fload = {
+
+    key : {
+
+    remoteJid: 'status@broadcast',
+
+    participant : '0@s.whatsapp.net'
+
+    },
+
+    message: {
+
+    orderMessage: {
+
+    itemCount : 2022,
+
+    status: 1,
+
+    surface : 1,
+
+    message: '[❗] Memuat Menu ' + teks + '...\n Semangat Yah Kak ^ω^', 
+
+    orderTitle: `Menu ▸`,
+
+    thumbnail: await (await fetch(fla + 'Loading')).buffer(), //Gambarnye
+
+    sellerJid: '0@s.whatsapp.net'
+
+    }
+
+    }
+
+    }
+
+    conn.reply(m.chat, '*Tunggu Sebentar Kak. . .*', fload)
+
     // gunakan ini jika kamu menggunakan whatsapp bisnis
     //   throw `
     // ┌〔 DAFTAR MENU 〕
@@ -514,16 +616,16 @@ function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   res = "Selamat dinihari🌃"
   if (time >= 4) {
-    res = "Selamat pagi🌄"
+    res = "Selamat pagi kak🌄"
   }
   if (time > 10) {
-    res = "Selamat siang🌄"
+    res = "Selamat siang kak🌄"
   }
   if (time >= 15) {
-    res = "Selamat sore🌇"
+    res = "Selamat sore kak🌇"
   }
   if (time >= 18) {
-    res = "Selamat malam🌉"
+    res = "Selamat malam kak🌉"
   }
   return res
 }
