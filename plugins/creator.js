@@ -30,8 +30,8 @@ let list = []
 ]
 const buttonsMessage = {
     contentText: `
-*Ini Adalah Nomor Owner, Bukan Bot. Utamakan Salam Jangan P*\n*Tidak Menerima Save*
-`.trim(),    footerText: ``,
+Hai Kak Ini No Owner ku ><.
+`.trim(),    footerText: `Jangan sungkan chat ya kak`,
     buttons: buttons,
   headerType: 'EMPTY'
 }
