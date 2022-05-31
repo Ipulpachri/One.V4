@@ -6,14 +6,15 @@ Big Thanks To:
 @Ariffb ( Admin Stikerin )
 @Benniismael ( Admin BOTSTYLE )
 @David
+@Fachri ( Recode ulng )
 Dan Yang Telah Menyelesaikan Script Ini
 */
 let fs = require('fs')
 let chalk = require('chalk')
 
 global.linkGC = ['https://chat.whatsapp.com/Jzd9DEVB5nODtNBk1VCNrV', 'https://chat.whatsapp.com/Jzd9DEVB5nODtNBk1VCNrV', 'https://chat.whatsapp.com/HBhy7rVae3o0PkIfkhvs2N'] // ganti jadi group lu
-global.owner = ['6282160268332', '0', '6282128475388'] // Masukan nomot kalian
-global.mods = ['6282160268332'] // Moderator
+global.owner = ['6285713041886', '0', '6285713041886'] // Masukan nomot kalian
+global.mods = ['6285713041886'] // Moderator
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Pengguna premium tidak memerlukan limit
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -52,7 +53,7 @@ global.APIKeys = { // APIKey Here
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = 'Sticker\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
+  var sticker_name = '𝙁𝘼𝘾𝙃𝙍𝙄𝘽𝙊𝙏𝙕\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
   var sticker_author = ''
 } else {
   var sticker_name = stickerpack.spackname
@@ -71,19 +72,19 @@ global.packname = sticker_name
 global.author = sticker_author
 
 // silakan di ganti klo mau
-global.wait = '*WAIT! | Mohon Tunggu Sebentar...*'
+global.wait = '*WAIT!, Mohon Tunggu Sebentar...*'
 global.rpg = 'Fitur Rpg Dimatikan\nKetik *#enable* *rpg* untuk menggunakan fitur ini.'
 global.nsfw = '“Katakanlah kepada orang laki-laki yang beriman: Hendaklah mereka menahan pandanganya, dan memelihara kemaluannya; … Katakanlah kepada wanita yang beriman: Hendaklah mereka menahan pandangannya, dan kemaluannya, dan janganlah mereka Menampakkan perhiasannya, kecuali yang (biasa) nampak dari padany,” \n(TQS. Al-Nur [24]: 30-31).'
-global.eror = '_*Error 404*_ *x_x*'
+global.eror = '*_Server Error_*'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=0&backgroundColor=%23401620&text='
 global.flu = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text='
-global.watermark = '\n🇴​​​​​🇳​​​​​🇪​​​​​ 🇧​​​​​🇴​​​​​🇹​​​​​🇿' //change the watermark (beberapa harus manual)
+global.watermark = '\nᴹᴿ᭄𝙁𝘼𝘾𝙃𝙍𝙄𝘽𝙊𝙏𝙕ོン' //change the watermark (beberapa harus manual)
 global.thumbfoto = 'https://i.ibb.co/ZLxBtr4/08a25e119b58f9eb3fe89e80110bf2fd.jpg' //Thumbnail
 global.image = 'https://telegra.ph/file/8862875cbcfdfe32e5103.jpg'
 
 // Boleh Di Ubah
-global.image = 'https://up.rzkyfdlh.tech/file/VIws518Qfses.jpg'
+global.image = 'https://telegra.ph/file/8862875cbcfdfe32e5103.jpg'
 global.bank = 'https://telegra.ph/file/d5ddf4cc627bb0e6bc420.jpg'
 global.kandang = 'https://telegra.ph/file/67a6ee607d03a4e52757d.jpg'
 global.kolam = 'https://telegra.ph/file/5aa5dfa3394477e11fb18.jpg'
