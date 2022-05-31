@@ -79,7 +79,7 @@ global.eror = '*_Server Error_*'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=0&backgroundColor=%23401620&text='
 global.flu = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text='
-global.watermark = '\nᴹᴿ᭄𝙁𝘼𝘾𝙃𝙍𝙄𝘽𝙊𝙏𝙕ོン' //change the watermark (beberapa harus manual)
+global.watermark = '\nᴹᴿ᭄fαchríвσtzン' //change the watermark (beberapa harus manual)
 global.thumbfoto = 'https://i.ibb.co/ZLxBtr4/08a25e119b58f9eb3fe89e80110bf2fd.jpg' //Thumbnail
 global.image = 'https://telegra.ph/file/8862875cbcfdfe32e5103.jpg'
 
