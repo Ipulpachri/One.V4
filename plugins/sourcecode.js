@@ -33,7 +33,7 @@ let info = `◪ 📮 *SCRIPT BOT*
 • Jangan lupa minta izin owner sebelum menggunakan scriptnya kak!
 • Jangan Lupa kasih star & kasih credit
 `.trim()
-await conn.send2Button(m.chat, info, `© ᴹᴿ᭄fαchríвσtzン`, 'Ok Fachri', 'ok', '💌 OWNER', '.owner', ftrol)
+await conn.send2Button(m.chat, info, `© ᴹᴿ᭄fαchríвσtzン`, 'Back', '.menu', 'Pemilik', '.owner', ftrol)
 }
 handler.help = ['sc']
 handler.tags = ['info']
